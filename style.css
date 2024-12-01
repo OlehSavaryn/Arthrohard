@@ -1,0 +1,84 @@
+body {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 450;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  position: relative;
+}
+
+.burger-menu {
+  position: absolute;
+  opacity: 0.05;
+  transform: translateY(-150%);
+  opacity: 0.05;
+  transition: transform 0.5s, opacity 0.1s;
+  width: 295px;
+  background-color: #ad4844;
+  z-index: 1000;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.mobile-nav li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mobile-nav li a {
+  color: #d8d8d8;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.mobile-nav li a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.burger-btn {
+  background: none;
+  color: #ad4844;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.burger-btn:focus {
+}
+
+.hidden {
+  display: none;
+}
+
+.show-menu {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-btn {
+    display: block;
+  }
+  .desctop-nav {
+    display: none;
+  }
+}
