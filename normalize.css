@@ -448,7 +448,8 @@ video {
   vertical-align: baseline;
 }
 
-ul {
+ul,
+p {
   margin: 0;
 }
 

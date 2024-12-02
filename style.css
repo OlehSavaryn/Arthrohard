@@ -9,10 +9,22 @@ body {
   padding: 0 15px;
 }
 
+/*--------HEADER----------------*/
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+  padding: 6px 0px;
+}
+
+.company-name {
+  text-transform: uppercase;
+}
+.alt-color {
+  text-transform: uppercase;
+  color: #ad4844;
 }
 
 .main-nav {
@@ -20,13 +32,16 @@ body {
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
+  background-color: #ad4844;
+  width: 100%;
   opacity: 0.05;
+  top: 0;
   transform: translateY(-150%);
   opacity: 0.05;
   transition: transform 0.5s, opacity 0.1s;
   width: 295px;
-  background-color: #ad4844;
+
   z-index: 1000;
 }
 
@@ -55,23 +70,78 @@ body {
 }
 
 .burger-btn {
+  display: none;
+  width: 25px;
+  height: 25px;
+  text-align: center;
   background: none;
   color: #ad4844;
   border: none;
-  font-size: 24px;
+  border-radius: 50%;
+  font-size: 20px;
   cursor: pointer;
 }
 
-.burger-btn:focus {
+.burger-btn:active {
+  box-shadow: 0px 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.hidden {
-  display: none;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .show-menu {
-  transform: translateY(0);
+  transform: translateY(45px);
   opacity: 1;
+}
+
+/*---------MAIN-------------*/
+
+.hero-section {
+  position: relative;
+}
+
+.hero-main {
+  padding: 0 8.5px;
+  padding-bottom: 85px;
+}
+.hero-description {
+  font-family: Futura PT;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 25.64px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(90.01deg, #111111 -8.85%, #b1b1b1 116.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.hero-description-second {
+  font-family: Futura PT;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.67px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.hero-section::after {
+  content: "";
+  display: inline-block;
+  background-image: url("./img/Vector.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 161.8px;
+  height: 122px;
+  position: absolute;
+  top: 482.3px;
+  left: -88.9px;
+  transform: rotate(-1deg);
 }
 
 @media screen and (max-width: 768px) {
