@@ -144,6 +144,53 @@ body {
   transform: rotate(-1deg);
 }
 
+/*-==============Details========*/
+
+.features {
+}
+
+.features-title {
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(
+    90.01deg,
+    #111111 -8.85%,
+    #b1b1b1 58.84%,
+    #696969 91.39%,
+    #b1b1b1 116.12%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.article-1 {
+}
+
+.article-1-item {
+}
+.article-1-description {
+}
+.article-1-img {
+}
+.article-2 {
+}
+.article-2-item {
+}
+.article-2-description {
+}
+.article-2-img {
+}
+.article-3 {
+}
+.article-3-item {
+}
+.article-3-description {
+}
+.article-3-img {
+}
+
 @media screen and (max-width: 768px) {
   .burger-btn {
     display: block;
